@@ -1,12 +1,11 @@
+"""Crea una función que verifique si un número dado es par o impar. La función debe imprimir un mensaje indicando si el número es par o impar."""
 
+numero = int(input("Ingrese un numero: "))
 
-def numero_maximo(num1, num2, num3):
-    if num1 >= num2 and num1 >= num3:
-        return num1
-    elif num2 >= num3:
-        return num3
+def verificar_par_impar(numero:int)->None:
+    if numero % 2 == 0:
+        print("su numero es par...")
     else:
-        return num3
+        print("su numero es impar...")
 
-
-print(numero_maximo(58,18,6))
+verificar_par_impar(numero)

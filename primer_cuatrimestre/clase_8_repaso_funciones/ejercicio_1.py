@@ -1,9 +1,8 @@
-def retorno_cadena():
+"""Crear una función que le solicite al usuario el ingreso de un número entero y lo retorne."""
 
-    cadena = input("Introduzca un valor string: ")
-    while len(cadena) <= 4 and len(cadena) >= 10:
-        cadena = input("Introduzca un valor string: ")
-        
-    return cadena
+def ingreso_numero_entero_retorno():
+    numero = int(input("Ingrese un numero a retornar: "))
+    return print(numero)
 
-print(retorno_cadena())
+varible = ingreso_numero_entero_retorno()
+print(varible)

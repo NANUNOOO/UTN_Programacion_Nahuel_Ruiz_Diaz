@@ -1,10 +1,12 @@
-numero = int(input("Ingrese un numero: "))
+from math import pi
 
-def verificar_par_impar(numero:int)->bool:
-    if numero % 2 == 0:
-        resultado = True
-    else:
-        resultado = False
+"""Escribe una función que calcule el área de un círculo. La función debe recibir el radio como parámetro y devolver el área."""
+
+def  calcular_area_circulo(radio):
+    resultado = pi * radio ** 2
     return resultado
 
-print(verificar_par_impar(numero))
+
+radio_usuario = float(input("ingrese el radio"))
+variable = calcular_area_circulo()
+print(variable)

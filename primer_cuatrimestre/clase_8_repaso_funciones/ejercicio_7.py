@@ -1,5 +1,12 @@
-def calcular_potencia(base, exponente):
-    RESULTADO = base ** exponente
-    return RESULTADO
+"""Crea una función que verifique si un número dado es par o impar. La función retorna True si el número es par, False en caso contrario."""
 
-print(calcular_potencia(2,3))
+numero = int(input("Ingrese un numero: "))
+
+def verificar_par_impar(numero:int)->bool:
+    if numero % 2 == 0:
+        resultado = True
+    else:
+        resultado = False
+    return resultado
+
+print(verificar_par_impar(numero))

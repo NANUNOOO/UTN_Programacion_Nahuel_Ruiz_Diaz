@@ -1,7 +1,6 @@
-def tabla_de_multiplicar(numero, inicio=1, fin=1)-> None:
-    if inicio >= 1 and fin <=11
-        for i in range(inicio , fin + 1):
-            print(f"El numero {numero} X {i} ) {numero * i}")
-    else:
-        print("ERROR parametro incorrecto...")
-tabla_de_multiplicar(2,5,9)
+"""Diseña una función que calcule la potencia de un número. La función debe recibir la base y el exponente como argumentos y devolver el resultado."""
+def calcular_potencia(base, exponente):
+    RESULTADO = base ** exponente
+    return RESULTADO
+
+print(calcular_potencia(2,3))

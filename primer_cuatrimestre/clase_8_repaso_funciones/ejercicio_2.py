@@ -1,7 +1,10 @@
-def calcular_area(base=1, altura=1):
-    area = base * altura
-    return area
+"""Crear una función que le solicite al usuario el ingreso de un número flotante y lo retorne."""
 
-base = float(input("Ingrese la base: "))
-altura = float(input("Ingrese la altura: "))
-print(calcular_area())
+def ingreso_numero_flotante_retorno():
+    numero = float(input("Ingrese un numero a retornar: "))
+    return print(numero)
+
+varible = ingreso_numero_flotante_retorno()
+print(varible)
+
+
