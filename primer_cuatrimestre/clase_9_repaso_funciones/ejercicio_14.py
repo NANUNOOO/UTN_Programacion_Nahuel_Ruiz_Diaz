@@ -18,5 +18,5 @@ def validar_ingreso_numerico(ingreso:str)->str:
                     break
     return int(ingreso)
 
-ingreso_validado = validar_ingreso_flotante()
+ingreso_validado = validar_ingreso_numerico()
 print("Ingreso validado: ", ingreso_validado)
