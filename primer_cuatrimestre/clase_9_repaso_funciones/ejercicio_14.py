@@ -8,7 +8,6 @@ def validar_ingreso_flotante()-> float:
     ingreso_valido = False
     ingreso = input("Ingrese un número: ")
     while not ingreso_valido:
-        contador_comas = 0
         primer_vuelta = True
         for i in range(len(ingreso)):
             match ingreso[i]:
