@@ -12,13 +12,15 @@ matriz = [
 ]
 
 def encontrar_numero(matriz,numero):
-    lista = []
+    posiciones = []
     for i in range(len(matriz)):
         for j in range(len(matriz[i])):
             if matriz[i][j] == numero:
-                lista += [i,j]
-                return lista
-    return "El numero no se encuentra en la matriz"
+                posiciones += [[i,j]]
+    if posiciones != []:
+        return posiciones
+    else:
+        return "El numero no se encuentra en la matriz"
 
 
 print(encontrar_numero(matriz,2))
