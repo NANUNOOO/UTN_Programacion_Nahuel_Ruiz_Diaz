@@ -59,6 +59,8 @@ Si el usuario selecciona una opción sin haber cargado vuelos, se debe mostrar u
 """
 import funciones.menu as menu
 
+#TAM_MAX = 100
+#vuelos = [None] * TAM_MAX
 vuelos = []
 
 print(menu.mostrar_menu(vuelos))
