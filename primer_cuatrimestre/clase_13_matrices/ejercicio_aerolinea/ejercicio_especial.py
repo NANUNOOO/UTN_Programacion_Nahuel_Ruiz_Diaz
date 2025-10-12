@@ -39,8 +39,23 @@ Crear una función que recorra la matriz y muestre el vuelo con el precio más a
 5-Mostrar vuelo más barato ----------------- 
 Crear una función que recorra la matriz y muestre el vuelo con el precio más bajo.
 
-6-Mostrar vuelos con precio mayor a 100000
+6-Mostrar vuelos con precio mayor a 100000 -----------------
 Mostrar todos los vuelos cuyo precio supere ese valor.
+
+-Requisitos técnicos:
+
+Se deben utilizar funciones para cada operación.
+Está prohibido el uso de:
+Métodos de listas (append(), remove(), etc.)
+Listas por comprensión
+try-except
+Clases
+Funciones incorporadas de Python (salvo len() e isdigit())
+Para almacenar los datos, se debe inicializar una matriz de tamaño fijo con espacio para hasta 100 vuelos:
+
+Los vuelos se deben cargar “a mano” en posiciones libres de esa matriz.
+Si el usuario selecciona una opción sin haber cargado vuelos, se debe mostrar un mensaje indicando que no hay datos disponibles para la operación.
+
 """
 import funciones.menu as menu
 
