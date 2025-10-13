@@ -32,7 +32,7 @@ def buscar_vuelo_por_codigo(vuelos: list) -> list:
     codigo = input("\ningrese el codigo del vuelo a buscar: ")
 
     for i in range(len(vuelos)):
-        if vuelos[i][0] == codigo:  #if vuelos[i] != None and vuelos[i][0] == codigo:
+        if vuelos[i][0] == codigo:
             resultado = vuelos[i]
             return resultado
         else:
