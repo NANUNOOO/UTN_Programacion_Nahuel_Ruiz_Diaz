@@ -32,11 +32,12 @@ def buscar_vuelo_por_codigo(vuelos: list) -> list:
     codigo = input("\ningrese el codigo del vuelo a buscar: ")
 
     for i in range(len(vuelos)):
-        if vuelos[i][0] == codigo:
-            resultado = vuelos[i]
-            return resultado
-        else:
-            return "El vuelo no existe"
+        for j in range(len(vuelos)):
+            if vuelos[i][0] == codigo:
+                resultado = vuelos[i]
+                return resultado
+    else:
+        return "El vuelo no existe..."
 
 def buscar_vuelo_mas_caro(vuelos: list) -> list:
     precio_maximo = float('-inf')
