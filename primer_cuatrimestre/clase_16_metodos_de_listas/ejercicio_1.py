@@ -25,18 +25,21 @@ def prestar_libro(titulo, libros, disponibles):
     indice = libros.index(titulo)
     for i in range(len(libros)):
         if disponibles[indice]:
-            disponibles = False
-            print(f"Se encontro el libro {titulo}.")
+            disponibles[indice] = False
+            mensaje = f"Se encontro el libro {titulo}."
+            return mensaje
         elif disponibles[indice] == False:
-            print(f"ERROR, el libro {titulo} fue prestado.")
+            mensaje = f"ERROR, el libro {titulo} fue prestado."
+            return mensaje
         else:
-            print("ERROR, Libro no encontrado...")
+            mensaje = "ERROR, Libro no encontrado..."
+            return mensaje
 
 def devolver_libro(titulo, libros, disponibles):
     indice = libros.index(titulo)
     for i in range(len(libros)):
         if not disponibles[indice]:
-            disponibles = True
+            disponibles[indice] = True
             print(f"Se encontro el libro {titulo} y fue devuelto.")
         elif disponibles[indice] == True:
             print(f"ERROR, el libro {titulo} no fue prestado.")
